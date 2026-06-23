@@ -1,6 +1,6 @@
 package LeetCode;
 
-public class MatDaigonalSum {
+public class MatDaignalSum {
     public static int sum(int[][] mat){
         int sum = 0;
         int n = mat.length;
@@ -19,14 +19,14 @@ public class MatDaigonalSum {
         System.out.println("Matrix Daignal Sum is: " + sum);
         System.out.print("Matrix: ");
         for(int i=0;i < arr.length;i++){
-            System.out.print("{");
+            System.out.print("[");
             for(int j=0;j < arr[i].length;j++){
                 System.out.print(arr[i][j]);
                 if(j < arr[i].length - 1){
                     System.out.print(",");
                 }
             }
-            System.out.print("} ");
+            System.out.print("]");
         }
         System.out.println();
     }
