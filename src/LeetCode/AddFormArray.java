@@ -11,7 +11,6 @@ public class AddFormArray {
         sum = sum * 10 + num[i];
     }
     sum += k;
-
     while(sum > 0){
         int lastdigit = sum % 10;
         nums.add(0,lastdigit);
