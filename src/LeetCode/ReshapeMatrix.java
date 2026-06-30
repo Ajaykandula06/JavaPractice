@@ -1,23 +1,16 @@
 package LeetCode;
-
-import java.sql.SQLOutput;
-
 public class ReshapeMatrix {
     public int[][] matReshape(int[][] mat,int r,int c){
+        int m=mat.length;
+        int n=mat[0].length;
+        if(m*n != r*c)return mat;
         int[][] arr=new int[r][c];
-        for(int i=0;i<=r;i++){
-            for(int j=0;j<=c;j++){
-                arr[i][j] = mat[i][j];
-            }
-            int next=0;
-            if(arr[i][i+next] != mat[i][i+next]){
-                System.out.println("we can't reshape the matrix");
-                return mat;
-            }
-            next++;
+        for(int k=0;k<m*n;k++){
+            arr[k/c][k%c]=mat[k/n][k%n];
         }
         return arr;
-    }
+        }
+
 
     public static void printMatrix(int[][] mat){
         System.out.print("Matrix: ");
@@ -34,12 +27,25 @@ public class ReshapeMatrix {
         System.out.println();
     }
 
+    public static void possible(int[][] mat,int r,int c){
+        ReshapeMatrix obj=new ReshapeMatrix();
+        int[][] check= obj.matReshape(mat,r,c);
+        if(check==mat){
+            System.out.println("The Reshaping of the Matrix is not Possible, Result Matrix remain Same");
+        }else{
+            System.out.println("THe Reshaping of the Matrix is Possible");
+        }
+
+    }
+
     public static void printResult(int[][] mat,int r,int c){
         System.out.print("Input ");
         printMatrix(mat);
         System.out.println("Given r: " + r);
         System.out.println("Given c: " + c);
+        possible(mat, r, c);
         ReshapeMatrix obj=new ReshapeMatrix();
+        System.out.print("Result ");
         printMatrix(obj.matReshape(mat,r,c));
         System.out.println();
 
@@ -49,6 +55,10 @@ public class ReshapeMatrix {
         int[][] mat={{1,2},{3,4}};
         int r=1,c=4;
 
+        int[][] mat2={{1,2},{3,4}};
+        int r2=2,c2=4;
+
         printResult(mat,r,c);
+        printResult(mat2,r2,c2);
     }
 }
