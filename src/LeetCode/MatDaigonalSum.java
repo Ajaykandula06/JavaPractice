@@ -1,6 +1,6 @@
 package LeetCode;
 
-public class MatDaignalSum {
+public class MatDaigonalSum {
     public static int sum(int[][] mat){
         int sum = 0;
         int n = mat.length;
