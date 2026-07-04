@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class CountEvenNum {
     public static int findEvenNum(int[] nums){

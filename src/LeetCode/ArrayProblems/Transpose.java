@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class Transpose {
     public static int[][] transpose(int[][] mat){

@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class MatDaigonalSum {
     public static int sum(int[][] mat){

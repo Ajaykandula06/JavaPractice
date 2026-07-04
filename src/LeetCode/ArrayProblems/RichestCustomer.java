@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class RichestCustomer {
     public static int maximumWealth(int[][] accounts){

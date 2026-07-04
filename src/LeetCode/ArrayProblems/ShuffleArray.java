@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class ShuffleArray {
     public int[] shuffle(int[] nums,int n){

@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class SmallerThanCurrent {
     public static int[] smaller(int[] nums){

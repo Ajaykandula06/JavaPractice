@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class CheckPangram {
     public static boolean pangram(String sentence){

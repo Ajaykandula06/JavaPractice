@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 public class MaxSubArray {
     public int max(int[]arr){
         int max=arr[0];

@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class IdenticalPairs {
     public static int identicalPairs(int[] nums){

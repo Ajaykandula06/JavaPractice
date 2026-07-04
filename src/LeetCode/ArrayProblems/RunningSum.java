@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class RunningSum {
     public int[] sumArray(int[] nums){

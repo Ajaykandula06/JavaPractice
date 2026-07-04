@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class MaxPopulationYear {
     public static int Maxyear(int[][] logs){

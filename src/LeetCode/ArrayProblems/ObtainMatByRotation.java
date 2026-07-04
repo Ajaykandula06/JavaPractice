@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class ObtainMatByRotation {
     public static boolean findRotation(int[][] mat,int[][] target){

@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class FlippingImage {
     public static int[][] flipAndInvert(int[][] image){

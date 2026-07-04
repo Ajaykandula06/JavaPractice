@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class HeighestAltitude {
     public static int largestAltitude(int[] gain){

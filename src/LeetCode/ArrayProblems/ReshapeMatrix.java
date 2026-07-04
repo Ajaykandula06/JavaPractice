@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 public class ReshapeMatrix {
     public int[][] matReshape(int[][] mat,int r,int c){
         int m=mat.length;

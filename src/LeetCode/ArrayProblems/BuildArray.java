@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class BuildArray {
     public static int[] build(int[] nums){

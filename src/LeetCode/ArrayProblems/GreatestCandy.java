@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class GreatestCandy {
     public static boolean[] greatest(int[] candies,int extra) {

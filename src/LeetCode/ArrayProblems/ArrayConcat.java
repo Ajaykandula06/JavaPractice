@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class ArrayConcat {
     public static int[] concatenation(int[] nums){

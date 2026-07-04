@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArrayProblems;
 
 public class OddValueMatrix {
     public static int oddCells(int m, int n, int[][] indices) {
