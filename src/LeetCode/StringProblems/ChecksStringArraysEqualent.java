@@ -18,6 +18,7 @@ public class ChecksStringArraysEqualent {
         System.out.println();
     }
 
+
     public static void printResult(String[] word1,String[] word2){
         System.out.print("First ");
         printArray(word1);
