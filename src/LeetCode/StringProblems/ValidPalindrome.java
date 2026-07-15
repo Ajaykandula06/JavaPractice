@@ -4,27 +4,26 @@ public class ValidPalindrome {
     public boolean  validPalindrome(String s){
         int left = 0;
         int right = s.length() - 1;
+        boolean checkright;
+        boolean checkleft;
         while (left < right) {
-                if (s.charAt(left) == s.charAt(right)) {
-                    right--;
-                    left++;
-                } else if (s.charAt(left) != s.charAt(right)) {
-                    int index = right;
-                    s = s.substring(0, index) + s.substring(index + 1);
-                    break;
-                }
+            if(s.charAt(left) == s.charAt(right)){
+                right--;
+                left++;
+        }else{
+                 checkright=checkPalindrome(s,left+1,right);
+                 checkleft=checkPalindrome(s,left,right-1);
+                return checkleft || checkright;
             }
-        System.out.println(s);
-        boolean checkright=checkPalindrome(s);
-        s=s.substring(0,left)+s.substring(left+1);
-        System.out.println(s);
-        boolean checkleft=checkPalindrome(s);
-        return checkleft||checkright;
+        }
+        return true;
+
+
         }
 
-        public static boolean checkPalindrome(String s) {
-            int left = 0;
-            int right = s.length() - 1;
+        public static boolean checkPalindrome(String s,int l,int r) {
+            int left = l;
+            int right = r;
             while (left < right) {
                 if (s.charAt(left) == s.charAt(right)) {
                     right--;

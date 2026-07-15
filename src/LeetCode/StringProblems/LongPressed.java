@@ -25,8 +25,6 @@ public class LongPressed {
     }
 
 
-
-
     public static void printResult(String name,String typed){
         System.out.println("Name: "+name);
         System.out.println("Typed: "+typed);
