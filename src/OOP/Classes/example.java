@@ -10,11 +10,22 @@ public class example {
         student1.changeName("David");
         student1.intro();
         System.out.println(student1.rollnu);
-        System.out.println(student1.name);
+        System.out.print(student1.name);
         System.out.println(student1.marks);
 
         Student nijam=new Student(student1);
         System.out.println(nijam.name);
+
+        Student random =new Student();
+        System.out.println(random.name + ", rno: " + random.rollnu);
+        random.intro();
+        random.changeName("raju");
+        random.intro();
+
+        Student one=new Student();
+        Student two=one;
+        one.name="All for one";
+        System.out.println(two.name);
     }
 }
 
@@ -31,9 +42,10 @@ class  Student{
         }
 
         Student(){
-            this.rollnu=25;
-            this.name="Evens";
-            this.marks=87.6f;
+            this(501,"ajay",77);
+           // this.rollnu=25;
+            //this.name="Evens";
+            //this.marks=87.6f;
         }
 
         void intro(){
@@ -44,11 +56,14 @@ class  Student{
            this.name=name;
         }
 
+
+
         Student(int num,String name,float marks){
             this.name=name;
             this.marks=marks;
             rollnu=num;
     }
+
 
 
 
