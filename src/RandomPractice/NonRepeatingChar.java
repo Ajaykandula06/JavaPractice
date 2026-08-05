@@ -3,18 +3,19 @@ package RandomPractice;
 import java.util.ArrayList;
 
 public class NonRepeatingChar {
-    public char nonRepeated(String s){
-        ArrayList<Character> list=new ArrayList<>();
+    public int nonRepeated(String s){
+       // ArrayList<Integer> list=new ArrayList<>()
+        int count;
         for(int i=0;i<s.length();i++){
-            int count=0;
+             count=0;
             for(int j=0;j<s.length();j++){
                if(i != j && s.charAt(i)==s.charAt(j)){
                 count++;
                }
             }
-            if(count == 0)list.add(s.charAt(i));
+            if(count == 0)return i;
         }
-        return list.get(0);
+        return -1;
     }
 
     public static void printResult(String s){
