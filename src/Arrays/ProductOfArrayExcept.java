@@ -4,15 +4,17 @@ public class ProductOfArrayExcept {
 
     public int[] product(int[] arr){
         int[] result=new int[arr.length];
+        int prefix=1;
         for(int i=0;i<arr.length;i++){
-            int multi=1;
-            for(int j=0;j<arr.length;j++){
-                if(i!=j){
-                    multi*=arr[j];
-                }
-                result[i]=multi;
-            }
+            result[i] = prefix;
+            prefix *= arr[i];
         }
+        int suffix=1;
+        for(int i=arr.length-1;i>=0;i--){
+            result[i] *= suffix;
+            suffix *= arr[i];
+        }
+
        return result;
     }
 
