@@ -5,7 +5,9 @@ public class ValidParenthesis {
         if(s.length()%2 !=0)return false;
         StringBuilder ch=new StringBuilder();
         for(int i=0;i<s.length();i++){
-            if(s.charAt(i) == '{')ch.append('}');
+            if(s.charAt(i) == '{'){
+                ch.append('}');
+            }
                 else if(s.charAt(i) == '['){
                     ch.append(']');
             }
@@ -18,7 +20,7 @@ public class ValidParenthesis {
                     ch.deleteCharAt(ch.length()-1);
             }
         }
-        return true;
+        return ch.isEmpty();
     }
 
     public static void printResult(String s){

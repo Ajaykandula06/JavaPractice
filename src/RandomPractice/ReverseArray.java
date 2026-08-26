@@ -1,14 +1,15 @@
 package RandomPractice;
 
-import java.util.HashMap;
-
-public class FrequencyOfNum {
-    public HashMap<Integer,Integer> howmany(int[] arr){
-        HashMap<Integer,Integer> map=new HashMap<>();
-       for(Integer i:arr){
-           map.put(i,map.getOrDefault(i,0)+1);
-       }
-        return map;
+public class ReverseArray {
+    public int[] reverse(int[] arr){
+        int mid=arr.length/2;
+        int n=arr.length-1;
+        for(int i=0;i<mid;i++){
+            int temp=arr[i];
+            arr[i]=arr[n-i];
+            arr[n-i]=temp;
+        }
+        return arr;
     }
 
     public static void printArray(int[] arr){
@@ -27,20 +28,15 @@ public class FrequencyOfNum {
     public static void printResult(int[] arr){
         System.out.print("Input ");
         printArray(arr);
-        FrequencyOfNum obj=new FrequencyOfNum();
-        System.out.println(obj.howmany(arr));
+        ReverseArray obj=new ReverseArray();
+        System.out.print("Output ");
+        printArray(obj.reverse(arr));
         System.out.println();
     }
 
     public static void main(String[] args) {
-        int[] arr={1, 2, 2, 3, 3, 3, 4};
-        int[] arr2={5, 5, 5, 5};
-        int[] arr3={1, 2, 3, 4, 5};
-        int[] arr4={2, 2, 2, 5, 5, 2};
+        int[] arr={1, 2, 3, 4, 5, 6};
 
         printResult(arr);
-        printResult(arr2);
-        printResult(arr3);
-        printResult(arr4);
     }
 }

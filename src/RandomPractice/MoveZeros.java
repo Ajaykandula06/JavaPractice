@@ -1,14 +1,18 @@
 package RandomPractice;
 
-import java.util.HashMap;
-
-public class FrequencyOfNum {
-    public HashMap<Integer,Integer> howmany(int[] arr){
-        HashMap<Integer,Integer> map=new HashMap<>();
-       for(Integer i:arr){
-           map.put(i,map.getOrDefault(i,0)+1);
-       }
-        return map;
+public class MoveZeros {
+    public int[] mover(int[] arr) {
+        int index=0;
+        for (int i = 0; i < arr.length; i++) {
+           if(arr[i] != 0){
+               arr[index]=arr[i];
+               index++;
+           }
+        }
+        for(int i=index;i<arr.length;i++){
+            arr[i]=0;
+        }
+        return arr;
     }
 
     public static void printArray(int[] arr){
@@ -27,20 +31,19 @@ public class FrequencyOfNum {
     public static void printResult(int[] arr){
         System.out.print("Input ");
         printArray(arr);
-        FrequencyOfNum obj=new FrequencyOfNum();
-        System.out.println(obj.howmany(arr));
+        MoveZeros obj=new MoveZeros();
+        System.out.print("Output ");
+        printArray(obj.mover(arr));
         System.out.println();
     }
 
     public static void main(String[] args) {
-        int[] arr={1, 2, 2, 3, 3, 3, 4};
-        int[] arr2={5, 5, 5, 5};
-        int[] arr3={1, 2, 3, 4, 5};
-        int[] arr4={2, 2, 2, 5, 5, 2};
+        int[] arr={0, 1, 0, 3, 12};
+        int[] arr2={0, 0, 1};
+        int[] arr3={1, 0, 0, 0, 3, 12};
 
         printResult(arr);
         printResult(arr2);
         printResult(arr3);
-        printResult(arr4);
     }
 }
