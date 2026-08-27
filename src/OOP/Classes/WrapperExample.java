@@ -32,7 +32,9 @@ public class WrapperExample {
        student.name="Iron Man";
 
 
-
+    }
+    public static void tvshows(){
+        System.out.println("There are so many tv shows but i watch latent even though i do not understand hindi");
     }
 
     static void swap(Integer rap,Integer rap2){

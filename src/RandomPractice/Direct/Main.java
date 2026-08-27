@@ -1,6 +1,6 @@
 package RandomPractice.Direct;
 
-import java.util.SplittableRandom;
+import static OOP.Classes.WrapperExample.tvshows;//it helps us to call methods from various packages ,we should specify them
 
 public class Main {
     public static void main(String[] args) {
@@ -64,7 +64,11 @@ public class Main {
         s8.changeName("vijay");//so we cannot change like s8=s9 ot pointing to the other objects
         //simply when the nonpremitive is final we can reassign it
 
+
+         tvshows();//for here we are calling a method from another package by importing ,we write a syntax to do that
+
     }
+
 }
 
 class Student {

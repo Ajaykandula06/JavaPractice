@@ -1,10 +1,9 @@
 package RandomPractice;
 
-import java.util.ArrayList;
+
 
 public class NonRepeatingChar {
     public int nonRepeated(String s){
-       // ArrayList<Integer> list=new ArrayList<>()
         int count;
         for(int i=0;i<s.length();i++){
              count=0;
