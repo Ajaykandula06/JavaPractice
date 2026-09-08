@@ -26,7 +26,8 @@ public class MeetingRooms {
                 j++;
             }
         }
-        return rooms;
+        maxRooms=Math.max(maxRooms,rooms);
+        return maxRooms;
     }
 
     public static void print2DArray(int[][] arr){
